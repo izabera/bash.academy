@@ -286,7 +286,7 @@ echo "Latest authentication attempt: $latestAuth"</samp>
 <pre class="syntax">
     <var>name</var> <strong>()</strong> <var>compound-command</var> [ <var>redirection</var> ]
 
-<samp>exists() { [[ -x $(type -P "$1" 2&gt;/dev/null) ]]; }
+<samp>exists() { [[ -x $(type -P "$1") ]]; }
 exists gpg || echo "Please install GPG." &lt;&amp;2</samp>
 </pre>
                                     
